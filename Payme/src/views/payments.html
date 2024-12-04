@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/body.css">
+    <link rel="stylesheet" href="/public/css/payments.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">PM</span>
+            </div>
+            <div class="me">
+                ME!
+            </div>
+        </div>
+        <div class="section-text">
+            <h1>Payments</h1>
+        </div>
+        <div class="icons">
+            <div class="profile">
+                <img src="/public/imgs/profile_11541176.png" alt="Foto de perfil" class="profile-img">
+                <label class="user" for="">Name</label>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        <aside class="navigation">
+            <h2 class="nav-label">Navigation</h2>
+            <button class="nav-btn">
+                <a href="/src/views/index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">DASHBOARD</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">📄</span>
+                    <span class="nav-text">MOVENTS</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">CARDS</span>    
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="">
+                    <span class="nav-icon">📞</span>
+                    <span class="nav-text">PAYMENTS</span>    
+                </a>
+            </button>
+        </aside>
+        <div class="content-container">
+            <div class="form-container">
+                <div class="form-card">
+                    <h2>Transferencia</h2>
+                    <div class="separator"></div>
+            
+                    <form id="transfer-form">
+                        <div class="input-group">
+                            <label for="payment-method">Selecciona el tipo de transferencia</label>
+                            <select id="payment-method" name="payment-method">
+                                <option value="card">Con tarjeta</option>
+                                <option value="user">Entre usuarios</option>
+                            </select>
+                        </div>
+            
+                        <div class="input-group card-input" style="display: none;">
+                            <label for="card-number">Número de tarjeta</label>
+                            <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="Número de tarjeta" />
+                            <div class="error-message"></div>
+                        </div>
+            
+                        <div class="input-group user-input" style="display: none;">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico del usuario" />
+                            <div class="error-message"></div>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="amount">Monto a depositar</label>
+                            <input type="number" id="amount" name="amount" placeholder="Monto" />
+                            <div class="error-message"></div>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="description">Descripción (opcional)</label>
+                            <textarea id="description" name="description" placeholder="Descripción de la transferencia"></textarea>
+                        </div>
+            
+                        <button type="submit" class="btn">Transferir</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="/public/js/payments.js"></script>
+</body>
+</html>

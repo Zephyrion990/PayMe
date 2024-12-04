@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/body.css">
+    <title>Deshboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">PM</span>
+            </div>
+            <div class="me">
+                ME!
+            </div>
+        </div>
+        <div class="section-text">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="icons">
+            <div class="profile">
+                <img src="/public/imgs/profile_11541176.png" alt="Foto de perfil" class="profile-img">
+                <label class="user" for="">Name</label>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        <!-- Barra de navegación lateral izquierda -->
+        <aside class="navigation">
+            <h2 class="nav-label">Navigation</h2>
+            <button class="nav-btn">
+                <a href="/src/views/index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">DASHBOARD</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">📄</span>
+                    <span class="nav-text">MOVENTS</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">CARDS</span>    
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="">
+                    <span class="nav-icon">📞</span>
+                    <span class="nav-text">PAYMENTS</span>    
+                </a>
+            </button>
+        </aside>
+    
+        <!-- Parte central -->
+        <main class="main-content">
+            <div class="top-labels">
+                <span class="right-label">Founds overview</span>
+                <a href="#" class="left-label">ALL REPORTS</a>
+            </div>
+            <div class="content-center">
+                <!-- Tarjeta de Gastos -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="period-selector">
+                            <span class="period-option active" data-period="day">Monthly</span>
+                            <span class="period-option" data-period="week">Weekly</span>
+                            <span class="period-option" data-period="month">Daily</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="amount-section">
+                            <div>
+                                <span class="amount">$1200</span>
+                                <p class="label">Total income</p>
+                            </div>
+                            <button class="expense-btn">
+                                <div class="circle"></div>
+                                <span class="btn-label">Income</span>
+                            </button>
+                        </div>
+                        <div class="chart-placeholder">Gráfica de Gastos</div>
+                    </div>
+                </div>
+            
+                <!-- Tarjeta de Ingresos -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="period-selector">
+                            <span class="period-option active" data-period="day">Monthly</span>
+                            <span class="period-option" data-period="week">Weekly</span>
+                            <span class="period-option" data-period="month">Daily</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="amount-section">
+                            <div>
+                                <span class="amount">$3500</span>
+                                <p class="label">Total outgoings</p>
+                            </div>
+                            <button class="income-btn">
+                                <div class="circle"></div>
+                                <span class="btn-label">Outgoings</span>
+                            </button>
+                        </div>
+                        <div class="chart-placeholder">Gráfica de Ingresos</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nueva sección debajo de las tarjetas de ingresos y gastos -->
+            <div class="top-labels">
+                <span class="right-label">Last cards</span>
+                <a href="#" class="left-label">NEW CARD</a>
+            </div>
+            <div class="credit-card-section">
+                <!-- Contenedor de tarjetas de crédito -->
+                <div class="credit-cards-container">
+                    <!-- Tarjeta 1 -->
+                    <div class="credit-card">
+                        <div class="card-icon">💳</div>
+                        <div class="card-details">
+                            <span class="card-number">**** **** **** 1234</span>
+                            <p class="card-label">Número de la tarjeta</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 2 -->
+                    <div class="credit-card">
+                        <div class="card-icon">💳</div>
+                        <div class="card-details">
+                            <span class="card-number">**** **** **** 5678</span>
+                            <p class="card-label">Número de la tarjeta</p>
+                        </div>
+                    </div>
+                    <div class="credit-card">
+                        <div class="card-icon">💳</div>
+                        <div class="card-details">
+                            <span class="card-number">**** **** **** 5678</span>
+                            <p class="card-label">Número de la tarjeta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!-- Parte derecha -->
+        <aside class="right-panel">
+            <div class="header-section">
+                <h2>Panel de Actividades</h2>
+                <div class="date-display">
+                    <span class="calendar-icon">📅</span>
+                    <span class="current-date">1 de Diciembre, 2024</span>
+                </div>
+            </div>
+            <div class="other-content">
+                <!-- Otros elementos aquí -->
+            </div>
+        </aside>
+    </div>
+    <script src="/public/js/periodSelector.js"></script>
+</body>
+</html>

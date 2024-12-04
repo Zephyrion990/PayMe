@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/body.css">
+    <link rel="stylesheet" href="/public/css/movents.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-text">PM</span>
+            </div>
+            <div class="me">
+                ME!
+            </div>
+        </div>
+        <div class="section-text">
+            <h1>Inicio</h1>
+        </div>
+        <div class="icons">
+            <div class="profile">
+                <img src="/public/imgs/profile_11541176.png" alt="Foto de perfil" class="profile-img">
+                <label class="user" for="">Name</label>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        <aside class="navigation">
+            <h2 class="nav-label">Navigation</h2>
+            <button class="nav-btn">
+                <a href="/src/views/index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">DASHBOARD</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">📄</span>
+                    <span class="nav-text">MOVENTS</span>
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="/src/views/movents.html">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">CARDS</span>    
+                </a>
+            </button>
+            <button class="nav-btn">
+                <a href="">
+                    <span class="nav-icon">📞</span>
+                    <span class="nav-text">PAYMENTS</span>    
+                </a>
+            </button>
+        </aside>
+        <div class="content-container">
+            <!-- Parte superior -->
+            <div class="top-section">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Buscar transacciones...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    <div class="date-info">
+                        <input type="date" id="date-picker" class="date-picker" value="2024-12-01">
+                        <button class="all-movements-btn">All Movements</button>
+                    </div>
+                </div>
+
+                <!-- Transacciones -->
+                <div class="transactions">
+                    <!-- Transacción Pagada -->
+                    <div class="transaction paid">
+                        <span class="transaction-icon">✅</span>
+                        <div class="transaction-details">
+                            <p class="small-label">From</p>
+                            <p class="large-label">OXXO</p>
+                        </div>
+                        <div class="status">
+                            <div class="status-circle green"></div>
+                            <span>Paid</span>
+                        </div>
+                        <div class="invoice-info">
+                            <p class="large-label">#123456</p>
+                            <p class="small-label">Factura</p>
+                        </div>
+                        <div class="amount-info">
+                            <p class="large-label">$1,200.00</p>
+                            <p class="small-label">01/12/2024, 14:30</p>
+                        </div>
+                    </div>
+
+                    <!-- Transacción Cancelada -->
+                    <div class="transaction cancelled">
+                        <span class="transaction-icon">❌</span>
+                        <div class="transaction-details">
+                            <p class="small-label">From</p>
+                            <p class="large-label">Amazon</p>
+                        </div>
+                        <div class="status">
+                            <div class="status-circle red"></div>
+                            <span>Cancelled</span>
+                        </div>
+                        <div class="invoice-info">
+                            <p class="large-label">#654321</p>
+                            <p class="small-label">Factura</p>
+                        </div>
+                        <div class="amount-info">
+                            <p class="large-label">$300.00</p>
+                            <p class="small-label">01/12/2024, 15:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Transacción Pendiente -->
+                    <div class="transaction pending">
+                        <span class="transaction-icon">⏳</span>
+                        <div class="transaction-details">
+                            <p class="small-label">From</p>
+                            <p class="large-label">PayPal</p>
+                        </div>
+                        <div class="status">
+                            <div class="status-circle yellow"></div>
+                            <span>Pending</span>
+                        </div>
+                        <div class="invoice-info">
+                            <p class="large-label">#789012</p>
+                            <p class="small-label">Factura</p>
+                        </div>
+                        <div class="amount-info">
+                            <p class="large-label">$450.00</p>
+                            <p class="small-label">01/12/2024, 16:15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
